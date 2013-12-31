@@ -11,7 +11,7 @@ p {
   margin: 24px; 
 }
 
-a {
+a, a:visited {
   color: #fff;
 }
 
