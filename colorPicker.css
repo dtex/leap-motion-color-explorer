@@ -1,0 +1,194 @@
+body {
+  background-color: #333333;
+  margin: 0;
+  font-family: verdana arial helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+}
+
+p {
+  margin: 24px; 
+}
+
+.instructions, .output-column {
+  height: 50px;
+  width: 10%;
+  border: 1px solid #000;
+  border-width: 0 1px 0 0;
+  float: left;
+  background-color: #333333;
+  color: #999;
+}
+
+.instructions div {
+  background-image: url('instructions.png');
+  background-repeat: no-repeat;
+  background-postion: top center;
+  background-size: cover;
+  height: 256px;
+  width: 256px;
+  opacity: 0.5;
+  margin: 0 auto;
+  text-align: center;  
+  margin-bottom: 10px;
+}
+
+.inst:first-of-type {
+  margin-top: 10px;
+}
+
+.output-column {
+  float: right;
+  border-width: 0 0 0 1px;
+  width: 20%;
+}
+
+.output-column h1 {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 24px 36px 12px 24px;
+  padding-bottom: 8px;border: 1px solid #ccc;
+  border-width: 0 0 1px 0;
+}
+
+.output-column h2 {
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0 0 0 24px;
+}
+
+.output-column p {
+  font-size: 12px;
+  margin: 18px 24px 0 24px;
+}
+
+.output-column ul li {
+  text-transform: none;
+  margin: 18px 40px 0 0;
+  line-height: 16px;
+}
+
+.color-viewer {
+  height: 50px;
+  width: 70%;
+  margin-left:10%;
+  position:absolute;
+}
+
+.compliment {
+  float: right;
+  width: 0%;
+}
+
+.tint {
+  float: left;
+  width: 50%;
+}
+
+.primary {
+  margin-left: 10%;
+}
+
+.primary, .first {
+  -webkit-transition: width .3s ease-in-out, margin-left .3s ease-in-out;
+  -moz-transition: width .3s ease-in-out, margin-left .3s ease-in-out;
+  -ms-transition: width .3s ease-in-out, margin-left .3s ease-in-out;
+  -o-transition: width .3s ease-in-out, margin-left .3s ease-in-out;
+  transition: width .3s ease-in-out, margin-left .3s ease-in-out;
+}
+
+.primary.mono {
+  width: 70%;
+}
+
+.primary.compliment {
+  width: 40%;
+}
+
+.primary.triad {
+  width: 30%;
+}
+
+.primary.tetrad {
+  width: 22%;
+}
+
+
+.first.mono {
+  width: 0%; 
+  margin-left: 80%;
+}
+
+.first.compliment {
+  width: 30%;
+  margin-left: 50%;
+}
+
+.first.triad {
+  width: 20%;
+  margin-left: 40%;
+}
+
+.first.tetrad {
+  width: 16%;
+  margin-left: 32%;
+}
+
+.second.mono, .second.compliment {
+  width: 0%; 
+  margin-left: 80%;
+}
+
+.second.triad {
+  width: 20%;
+  margin-left: 60%;
+}
+
+.second.tetrad {
+  width: 16%;
+  margin-left: 48%;
+}
+
+.third.mono, .third.compliment, .third.triad {
+  width: 0%; 
+  margin-left: 80%;
+}
+
+.third.tetrad {
+  width: 16%;
+  margin-left: 64%;
+}
+
+.results {
+  background-color: #ccc;
+  color: #333;
+  padding-top: 18px;
+  padding-bottom: 24px;
+  margin-top: 8px;
+  font-size: 15px;
+  height: 80px;
+}
+
+.logo {
+  margin: 8px;
+  height: 240px;
+  background-image: url('wheel.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.color-indicator {
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  border: solid 1px white;
+  border-radius: 4px;
+  display: none;
+}
+
+.ci-primary {
+  background-color: rgba(255,255,255,.50);
+}
