@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <link href="colorPicker.css" media="screen" rel="Stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+   
+   <!-- Instructions, column 1 -->
+    <div class="instructions tall">
+      <div class="inst hue">Hue</div>
+      <div class="inst saturation">Saturation</div>
+      <div class="inst angle">Angle</div>
+      <div class="inst selectMono">Mono</div>
+      <div class="inst selectCompliment">Compliment</div>
+      <div class="inst selectTriad">Triad</div>
+      <div class="inst selectTetrad">Tetrad</div>
+      <div class="inst select">Select</div>
+    </div>
+    
+    <div class="color-viewer tall primary mono">
+        <div class="tint lightest"></div>
+        <div class="tint lighter"></div>
+        <div class="tint darker"></div>
+        <div class="tint darkest"></div>
+    </div>
+    
+      <div class="color-viewer tall first mono">
+        <div class="tint lightest"></div>
+        <div class="tint lighter"></div>
+        <div class="tint darker"></div>
+        <div class="tint darkest"></div>
+    </div>
+
+    <div class="color-viewer tall second mono">
+        <div class="tint lightest"></div>
+        <div class="tint lighter"></div>
+        <div class="tint darker"></div>
+        <div class="tint darkest"></div>
+    </div>
+        
+    <div class="color-viewer tall third mono">
+        <div class="tint lightest"></div>
+        <div class="tint lighter"></div>
+        <div class="tint darker"></div>
+        <div class="tint darkest"></div>
+    </div>
+    
+    <div class="output-column tall">
+      <div class="logo">
+        <div class="color-indicator ci-primary"></div>
+        <div class="color-indicator ci-first"></div>
+        <div class="color-indicator ci-second"></div>
+        <div class="color-indicator ci-third"></div>
+      </div>
+      <div class="results"></div>
+      <h1>Color Explorer</h1>
+      <h2>A Leap Motion Controller Experiment</h2>
+    </div>    
+    
+    <script src="leap.js"></script>
+    <script src="colorPicker.js"></script>
+  
+  </body>
+</html>  
