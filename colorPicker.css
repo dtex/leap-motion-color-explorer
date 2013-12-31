@@ -11,6 +11,10 @@ p {
   margin: 24px; 
 }
 
+a, a:visited {
+  color: #fff;
+}
+
 .instructions, .output-column {
   height: 50px;
   width: 10%;
